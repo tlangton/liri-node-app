@@ -1,0 +1,15 @@
+Fandango Application Registration
+
+Application Registered!
+
+Your API keys are:
+
+Discovery API: production
+
+Key: mmg2czqhh2tfd52se3rmxy64
+
+Applicationpulpinfo Key: mmg2czqhh2tfd52se3rmxy64 Secret: UetAfnH648 Status: waiting Created: 4 seconds ago
+
+
+
+http://api.rottentomatoes.com/api/public/v1.0/movies.json?apikey=mmg2czqhh2tfd52se3rmxy64&q=Blade&Runer&page_limit=1
