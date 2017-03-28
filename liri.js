@@ -113,8 +113,35 @@ inquirer
         //     // omdb
         //     //////////////////////
         function movie(title) {
-            console.log("movie " + title);
-            writeLog("movie " + title);
+
+
+            var queryURL = "http://www.omdbapi.com/?t=" + title + "&y=&plot=short&r=json";
+
+            request(queryURL, function(error, response, body) {
+
+             // If the request is successful (i.e. if the response status code is 200)
+             if (!error && response.statusCode === 200) {
+
+
+ // console.log(JSON.parse(body));
+
+            var movieLog =
+            "Title: " + JSON.parse(body).Title +'\n'+
+            "Release Year: " + JSON.parse(body).Year +'\n'+
+            "IMDB Rating: " + JSON.parse(body).Title +'\n'+
+            "Produced in: " + JSON.parse(body).Country +'\n'+
+            "Language: " + JSON.parse(body).Language +'\n'+
+            "Plot: " + JSON.parse(body).Plot +'\n'+
+            "Actors: " + JSON.parse(body).Actors +'\n'+
+            // "Rotten Tomatoes Rating: " + JSON.parse(body).Ratings[1].Value +'\n'+
+            "Rotten Tomatoes URL: " + JSON.parse(body).Country +'\n'
+             }
+             console.log( movieLog);
+            writeLog(movieLog);
+
+        });
+
+
         }
 
         //     //////////////////////
