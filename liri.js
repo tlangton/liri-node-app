@@ -1,83 +1,116 @@
+///////////////////////
+// Dependencies
+///////////////////////
 var keyxpt = require("./keys.js");
-var Twitter = require('twitter');
+var inquirer = require("inquirer");
+var Twitter = require("twitter");
+var spotify = require("spotify");
+var fs = require("fs");
+var request = require("request");
 
-console.log("--------------------------");
-console.log(keyxpt.twitterKeys);
-console.log("--------------------------");
+//////////////////////
+// Variable declaration
+//////////////////////
 
-var client = new Twitter({
-  consumer_key: '',
-  consumer_secret: '',
-  access_token_key: '',
-  access_token_secret: ''
-});
+//the intro text
+var introText = "Who approaches the Bridge of Death must answer me these questions three, \'ere the other side he see?";
+console.log(introText);
 
-var client =  new Twitter({
-  consumer_key: twitterKeys.consumer_key,
-  consumer_secret: twitterKeys.consumer_secret,
-  access_token_key: twitterKeys.access_token_key,
-  access_token_secret: twitterKeys.access_token_secret
-});
-// console.log( client );
+var client = new Twitter(keyxpt.twitterKeys);
+var rText;
+var rTyp;
 
-var inputString = process.argv;
-// console.log( process.argv );
-// Parses the command line argument to capture the "processChoice" & the query strings
-var processChoice = inputString[2];
-var inputVar = inputString[3];
+//////////////////////
+// the input source  -- inquired questions
+//////////////////////
 
+var questions = [
+    {
+        type: "list",
+        message: "What Request type?",
+        choices: ["Twitter", "Spotify", "Movie", "Random"],
+        name: "requestType"
+    },
+    {
+    	//title is requested only if spotify or movie is specified
+        type: "input",
+        message: "Movie or Song Title?",
+        name: "requestText",
+        when: function(answers) {
+            return answers.requestType === "Spotify" ||
+                answers.requestType === "Movie";
+        }
+    }
+];
 
-// Here's the variable we will be modifying with the new info
-var theOutput;
+// Create a "Prompt" with a series of questions from var above.
+inquirer
+    .prompt(
+        // Here we give the user a list to choose from.
+        questions   // the variable
+        // Once we are done with all the questions... "then" we do stuff with the answers
+        // In this case, we store all of the answers into a "user" object that inquirer makes for us.
+    )
+    .then(function(user) {
+        // If we log that user as a JSON, we can see how it looks.
+        // console.log(JSON.stringify(user, null, 2));
 
-// Determines the processChoice selected...
-// Based on the processChoice we run the appropriate function
-if (processChoice === "my-tweets") {
-	// theOutput = processChoice
+        var rText = user.requestText;
+        var rType = user.requestType;
 
-	client.get('search/tweets', {q: 'node.js'}, function(error, tweets, response) {
-   console.log(tweets);
-});
-// client.get('favorites/list', function(error, tweets, response) {
-//   if(error) throw error;
-//   console.log(tweets);  // The favorites.
-//   console.log(response);  // Raw response object.
-// });
+        switch (rType) {
+            case "Spotify":
+                spotify(rText);
+                break;
 
+            case "Twitter":
+                tweets();
+                break;
 
-}
+            case "Movie":
+                movie(rText);
+                break;
 
-else if (processChoice === "spotify-this-song") {
-  theOutput = 'el songo';
-}
+            case "Random":
+                selfDetermined();
+                break;
 
-else if (processChoice === "movie-this") {
-
-  // var queryURL = "http://www.omdbapi.com/?t=" + inputVar + "&y=&plot=short&r=json";
-  //   $.ajax({
-  //     url: queryURL,
-  //     method: "GET"
-  //   }).done(function(response) {
-  //     console.log("Title: " + response.Title
-  //     	+ "\nYear: " + response.Year
-  //     	+ "\nimdbRating: " + response.imdbRating
-  //     	+ "\nCountry: " + response.Country
-  //     	+ "\nLanguage: " + response.Language
-  //     	+ "\nPlot: " + response.Plot
-  //     	+ "\nActors: " + response.Actors
-  //     	);
-  //   });
-
-  theOutput = "movee";
-}
-
-else if (processChoice === "do-what-it-says") {
-  theOutput = 'till satisfy';
-}
+            default:
+                ("unknown choice");
+                break;
+        }
 
 
-else {
-  theOutput = "Not a recognized command";
-}
 
-console.log( theOutput );
+        // Based on requestType run the appropriate function
+
+        //////////////////////
+        // twitter
+        //////////////////////
+        function tweets() {
+            console.log("twit");
+        }
+
+
+        //     //////////////////////
+        //     // spotify
+        //     //////////////////////
+        function spotify(title) {
+            console.log("spot " + title);
+        }
+
+        //     //////////////////////
+        //     // omdb
+        //     //////////////////////
+        function movie(title) {
+            console.log("movie " + title);
+        }
+
+        //     //////////////////////
+        //     // self directed
+        //     //////////////////////
+        function selfDetermined() {
+            console.log("random ");
+        }
+
+    });
