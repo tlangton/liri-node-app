@@ -7,13 +7,14 @@ var Twitter = require("twitter");
 var spotify = require("spotify");
 var fs = require("fs");
 var request = require("request");
+var moment = require("moment");
 
 //////////////////////
 // Variable declaration
 //////////////////////
 
 //the intro text
-var introText = "Who approaches the Bridge of Death must answer me these questions three, \'ere the other side he see?";
+var introText = "Who approaches the Bridge of Death must answer me these questions three, 'ere the other side he see?";
 console.log(introText);
 
 var client = new Twitter(keyxpt.twitterKeys);
@@ -21,7 +22,7 @@ var rText;
 var rTyp;
 
 //////////////////////
-// the input source  -- inquired questions
+// User Input   -- inquired questions
 //////////////////////
 
 var questions = [
@@ -32,7 +33,7 @@ var questions = [
         name: "requestType"
     },
     {
-    	//title is requested only if spotify or movie is specified
+        //title is requested only if spotify or movie is specified
         type: "input",
         message: "Movie or Song Title?",
         name: "requestText",
@@ -47,7 +48,7 @@ var questions = [
 inquirer
     .prompt(
         // Here we give the user a list to choose from.
-        questions   // the variable
+        questions // the variable
         // Once we are done with all the questions... "then" we do stuff with the answers
         // In this case, we store all of the answers into a "user" object that inquirer makes for us.
     )
@@ -80,7 +81,15 @@ inquirer
                 break;
         }
 
+        function writeLog(data) {
+            var tNow = moment().format("MM DD YYYY, h:mm:ss a");
 
+            fs.appendFile("log.txt", data + " " + tNow + "\n", function(err) {
+                if (err) throw err;
+
+                // console.log("Saved!");
+            });
+        }
 
         // Based on requestType run the appropriate function
 
@@ -89,14 +98,15 @@ inquirer
         //////////////////////
         function tweets() {
             console.log("twit");
+            writeLog("twit");
         }
-
 
         //     //////////////////////
         //     // spotify
         //     //////////////////////
         function spotify(title) {
             console.log("spot " + title);
+            writeLog("spot " + title);
         }
 
         //     //////////////////////
@@ -104,6 +114,7 @@ inquirer
         //     //////////////////////
         function movie(title) {
             console.log("movie " + title);
+            writeLog("movie " + title);
         }
 
         //     //////////////////////
@@ -111,6 +122,6 @@ inquirer
         //     //////////////////////
         function selfDetermined() {
             console.log("random ");
+            writeLog("random");
         }
-
     });
