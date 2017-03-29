@@ -1,61 +1,48 @@
-twit
-twit
-twit
-twit
-twit
-twit function () { return new Date().getTime();}
-twit 
-twit March 28th 172017, 1:13:02 pm
-twit March 28 17, 1:15:23 pm
-twit 03 28 2017, 1:16:01 pm
-movie catch22 03 28 2017, 4:03:41 pm
-movie catch22 03 28 2017, 4:06:25 pm
-movie frozen 03 28 2017, 4:07:38 pm
-movie frozen 03 28 2017, 4:09:21 pm
-Title: Catch22
-Release Year: 2010
- 03 28 2017, 4:18:34 pm
-Title: Catch 22
-Release Year: 2015
-IMDB Rating: Catch 22
-Produced in Country: 2015
- 03 28 2017, 4:22:10 pm
-Title: Frozen
-Release Year: 2013
-IMDB Rating: Frozen
-Produced in: USA
-Language: English, Icelandic
-Plot: When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister, Anna, teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.
-Actors: Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad
-Rotten Tomatoes Rating: USA
-Rotten Tomatoes URL: USA
- 03 28 2017, 4:25:47 pm
-Title: Frozen
-Release Year: 2013
-IMDB Rating: Frozen
-Produced in: USA
-Language: English, Icelandic
-Plot: When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister, Anna, teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.
-Actors: Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad
-Rotten Tomatoes Rating: [object Object],[object Object],[object Object]
-Rotten Tomatoes URL: USA
- 03 28 2017, 4:27:13 pm
-Title: Frozen
-Release Year: 2013
-IMDB Rating: Frozen
-Produced in: USA
-Language: English, Icelandic
-Plot: When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister, Anna, teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.
-Actors: Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad
-Rotten Tomatoes Rating: 89%
-Rotten Tomatoes URL: USA
- 03 28 2017, 4:28:11 pm
-Title: Furious
-Release Year: 2011
-IMDB Rating: Furious
-Produced in: Netherlands
-Language: Dutch
-Plot: The story is about Sven a boy who gets beaten and bullied at home because his father favors his brother over him. Sven goes to school and tries to hide his bruises. When his crush sees them...
-Actors: Abbey Hoes, Ko Zandvliet, Mingus Dagelet, Juliet Daalder
-Rotten Tomatoes URL: Netherlands
- 03 28 2017, 4:29:35 pm
+
+
+---------- Title: Jagged Edge ---------- 
+ Release Year: 1985
+ IMDB Rating: 6.4
+ Produced in: USA
+ Language: English
+ Plot: San Francisco heiress Page Forrester is brutally murdered in her remote beach house. Her husband Jack is devastated by the crime but soon finds himself accused of her murder. He hires ...
+ Actors: Maria Mayenzet, Peter Coyote, Dave Austin, Richard Partlow
+ Rotten Tomatoes Rating: 82%
+ Rotten Tomatoes URL: http://www.rottentomatoes.com/m/jagged_edge/
+ 03 29 2017, 6:38:47 pm
+
+
+---------- Title: The Bridge on the River Kwai ---------- 
+ Release Year: 1957
+ IMDB Rating: 8.2
+ Produced in: UK, USA
+ Language: English, Japanese, Thai
+ Plot: After settling his differences with a Japanese PoW camp commander, a British colonel co-operates to oversee his men's construction of a railway bridge for their captors - while oblivious to a plan by the Allies to destroy it.
+ Actors: William Holden, Alec Guinness, Jack Hawkins, Sessue Hayakawa
+ Rotten Tomatoes Rating: 94%
+ Rotten Tomatoes URL: http://www.rottentomatoes.com/m/bridge_on_the_river_kwai/
+ Wed Mar 29 2017 18:39:22 GMT-0400 (EDT)
+
+
+---------- Title: Dogs ---------- 
+ Release Year: 2016
+ IMDB Rating: 7.6
+ Produced in: Romania, France, Bulgaria, Qatar
+ Language: Romanian
+ Plot: Roman returns to the land he has just inherited from his grandfather. Fully decided to sell this vast but desolate property, he is warned by the local cop that his grandfather was a local ...
+ Actors: Dragos Bucur, Gheorghe Visu, Vlad Ivanov, Costel Cascaval
+ Rotten Tomatoes Rating: N/A
+ Rotten Tomatoes URL: http://www.rottentomatoes.com/m/dogs_2016/
+ Logged: Wed Mar 29 2017 18:40:28 GMT-0400 (EDT)
+
+
+---------- Title: Spiderman ---------- 
+ Release Year: 1990
+ IMDB Rating: 5.7
+ Produced in: Switzerland
+ Language: German
+ Plot: N/A
+ Actors: N/A
+ Rotten Tomatoes Rating: N/A
+ Rotten Tomatoes URL: http://www.rottentomatoes.com/m/spiderman-1990/
+ Logged: Wed Mar 29 2017 18:41:36 GMT-0400 (EDT)
