@@ -10,7 +10,7 @@ var request = require("request");
 var moment = require("moment");
 var aLine = "-------------------------------------------\n\n";
 var row40 = "----------------------------------------"; //40 hyphens!
-var row80 =  (row40 + row40).slice(-80);
+var row80 = (row40 + row40).slice(-80);
 var returns2 = "\n\n";
 var returns1 = "\n";
 //////////////////////
@@ -32,33 +32,42 @@ var rTyp;
 /////////////////////////////////////////
 
 var questions = [
-    {
-        type: "list",
-        message: "What Request type?",
-        choices: ["Twitter", "Spotify", "Movie", "Random"],
-        name: "requestType"
-    },
-    {
-        //title is requested only if spotify or movie is specified
+{
+    type: "list",
+    message: "What Request type?",
+    choices: ["Twitter", "Spotify", "Movie", "Random"],
+    name: "requestType"
+},
+{
+        //movie title is requested if movie picked
         type: "input",
-        message: "Movie or Song Title?",
+        message: "Movie Title?",
         name: "requestText",
         when: function(answers) {
-            return answers.requestType === "Spotify" ||
-                answers.requestType === "Movie";
+            return answers.requestType === "Movie";
+        }
+    },
+    {
+        //song title is requested only for spotify
+        type: "input",
+        message: "Song Title?",
+        name: "requestText",
+        when: function(answers) {
+            return answers.requestType === "Spotify";
         }
     }
-];
+
+    ];
 
 // Create a "Prompt" with a series of questions from var above.
 inquirer
-    .prompt(
+.prompt(
         // Here we give the user a list to choose from.
         questions // the variable
         // Once we are done with all the questions... "then" we do stuff with the answers
         // In this case, we store all of the answers into a "user" object that inquirer makes for us.
-    )
-    .then(function(user) {
+        )
+.then(function(user) {
         // If we log that user as a JSON, we can see how it looks.
         // console.log(JSON.stringify(user, null, 2));
 
@@ -67,24 +76,24 @@ inquirer
 
         switch (rType) {
             case "Spotify":
-                spotify(rText);
-                break;
+            spotify(rText);
+            break;
 
             case "Twitter":
-                tweets();
-                break;
+            tweets();
+            break;
 
             case "Movie":
-                movie(rText);
-                break;
+            movie(rText);
+            break;
 
             case "Random":
-                selfDetermined();
-                break;
+            selfDetermined();
+            break;
 
             default:
-                ("unknown choice");
-                break;
+            ("unknown choice");
+            break;
         }
 
         function writeLog(data) {
@@ -98,7 +107,7 @@ inquirer
 
                     // console.log("Saved!");
                 }
-            );
+                );
         }
 
         // Based on requestType run the appropriate function
@@ -114,18 +123,33 @@ inquirer
         ////////////////////////
         //// spotify
         ////////////////////////
+        var aOfB = "https://api.spotify.com/v1/search?q=track:the%20sign%20artist:ace%20of%20base&type=track"
+
         function spotify(title) {
-            console.log("spot " + title);
+            console.log("spot: " + title);
             writeLog("spot " + title);
+
+            var queryURL = "https://api.spotify.com/v1/search?q=" + title + "&type=track";
+            request(queryURL, function(error, response, body) {
+                console.log(body);
+                return;
+            });
+
+
         }
 
         ////////////////////////
         //// omdb
         ////////////////////////
         function movie(title) {
+            //if no title entered, Nobody's the default.
+            if (title == "") {
+                var title = "Mr. Nobody";
+            }
+
             var queryURL = "http://www.omdbapi.com/?t=" +
-                title +
-                "&y=&plot=short&tomatoes=true&r=json";
+            title +
+            "&y=&plot=short&tomatoes=true&r=json";
 
             request(queryURL, function(error, response, body) {
                 // If the request is successful (i.e. if the response status code is 200)
@@ -144,47 +168,48 @@ inquirer
                         // console.log("rating "+ rtRating);
                     }
 
+                    //calculating header log line output - making it pretty.
+                    //the title line and the last line will be 80 characters long, the title centered.
                     var tLength = jsBody.Title.length;
-                    // console.log("tLength "+ tLength);
-
                     var cPadding = (71 - tLength) / 2;
                     var cPaddingSlice = row40.slice(-cPadding);
-                    var titleString = returns2 + cPaddingSlice +
-                        " Title: " +
-                        jsBody.Title +
-                        " " +
-                        cPaddingSlice;
+                    var titleString = returns2 +
+                    cPaddingSlice +
+                    " Title: " +
+                    jsBody.Title +
+                    " " +
+                    cPaddingSlice;
                     // console.log(titleString);
 
                     var movieLog = titleString +
-                        returns1 +
-                        " Release Year: " +
-                        jsBody.Year +
-                        "\n" +
-                        " IMDB Rating: " +
-                        jsBody.imdbRating +
-                        "\n" +
-                        " Produced in: " +
-                        jsBody.Country +
-                        "\n" +
-                        " Language: " +
-                        jsBody.Language +
-                        "\n" +
-                        " Plot: " +
-                        jsBody.Plot +
-                        "\n" +
-                        " Actors: " +
-                        jsBody.Actors +
-                        "\n" +
-                        " Rotten Tomatoes Rating: " +
-                        rtRating +
-                        "\n" +
-                        " Rotten Tomatoes URL: " +
-                        jsBody.tomatoURL +
-                        "\n";
+                    returns1 +
+                    " Release Year: " +
+                    jsBody.Year +
+                    "\n" +
+                    " IMDB Rating: " +
+                    jsBody.imdbRating +
+                    "\n" +
+                    " Produced in: " +
+                    jsBody.Country +
+                    "\n" +
+                    " Language: " +
+                    jsBody.Language +
+                    "\n" +
+                    " Plot: " +
+                    jsBody.Plot +
+                    "\n" +
+                    " Actors: " +
+                    jsBody.Actors +
+                    "\n" +
+                    " Rotten Tomatoes Rating: " +
+                    rtRating +
+                    "\n" +
+                    " Rotten Tomatoes URL: " +
+                    jsBody.tomatoURL +
+                    "\n";
                 }
 
-                console.log(movieLog,row80,returns2);
+                console.log(movieLog, row80, returns2);
                 writeLog(movieLog);
             });
         }
