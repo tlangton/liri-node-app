@@ -24,10 +24,11 @@ var row80 = (row40 + row40).slice(-80);
 var returns2 = "\n\n";
 var returns1 = "\n";
 var defaultTrack = "";
-
-
+var maxTweetcount = "";
 //Console header//////
-console.log(row80 + returns1 + introText + "\n" + introText2 + returns1 + row80);
+console.log(
+    row80 + returns1 + introText + "\n" + introText2 + returns1 + row80
+);
 /////////////////////////////////////////
 // User Input   -- inquired questions  --
 /////////////////////////////////////////
@@ -51,7 +52,7 @@ var questions = [
     {
         //song title is requested only for spotify
         type: "input",
-        message: "Song Title?",
+        message: "Artist / Song Title?",
         name: "requestText",
         when: function(answers) {
             return answers.requestType === "Spotify";
@@ -101,7 +102,7 @@ inquirer
             var tNow = new Date();
             fs.appendFile(
                 "log.txt",
-                data + " Logged: " + tNow + "\n" + row80 + returns1,
+                data + " Logged: " + tNow + "\n" + row80,
                 function(err) {
                     if (err) throw err;
                 }
@@ -122,8 +123,42 @@ inquirer
         // twitter
         //////////////////////
         function tweets() {
-            console.log("twit");
-            writeLog("twit");
+            // console.log("twit");
+            // writeLog("twit");
+
+            var twitLogHeader =  returns1 + row80 + returns1 + "Recent Tweets: " + returns1 + row40 + returns1 ;
+            writeLog(twitLogHeader);
+            writeLogLess(returns1);
+
+            var params = { screen_name: "Pulpinfo56" };
+            client.get(
+                "statuses/user_timeline",
+                params,
+                function(error, tweets, response) {
+                    if (!error) {
+                        // console.log(tweets);
+
+                        if (tweets.length > 20) {
+                            maxTweetcount = 20;
+                        } else {
+                            maxTweetcount = tweets.length;
+                        }
+
+                        for (i = 0; i < maxTweetcount; i++) {
+                            var twitterLog =
+                                (i + 1) +
+                                " )  --->>  " +
+                                tweets[i].created_at +
+                                returns1 +
+                                tweets[i].text +
+                                returns1;
+                            console.log(twitterLog);
+                            writeLogLess(twitterLog);
+                        }
+                    }
+                writeLogLess(row80 + returns2);
+                }
+            );
         }
 
         ////////////////////////
@@ -138,7 +173,7 @@ inquirer
             // console.log("spot: " + title);
             // writeLog("spot " + title);
 
-             if (title == "") {
+            if (title == "") {
                 var title = "The Sign Ace of Base";
                 defaultTrack = "No search params! - Default Track -> ";
             }
@@ -158,8 +193,10 @@ inquirer
                         countReportTracks = itemLength;
                     }
 
-                    var spotifyLogHeader = returns1 + row80 +
-                        returns1 + defaultTrack +
+                    var spotifyLogHeader = returns1 +
+                        row80 +
+                        returns1 +
+                        defaultTrack +
                         "Spotify search: " +
                         title +
                         "\n" +
@@ -169,10 +206,11 @@ inquirer
                         "First " +
                         countReportTracks +
                         " Matches shown.\n" +
-                        row80 +
+                        row40 +
                         returns1;
 
                     writeLog(spotifyLogHeader);
+                    writeLogLess(returns1);
                     console.log(spotifyLogHeader);
 
                     if (itemLength < 1) {
@@ -216,7 +254,7 @@ inquirer
             //if no title entered, Nobody's the default.
             if (title == "") {
                 var title = "Mr. Nobody";
-                defaultTrack = "No film selected - default movie choice <->"
+                defaultTrack = "No film selected - default movie choice <->";
             }
 
             var queryURL = "http://www.omdbapi.com/?t=" +
@@ -229,15 +267,18 @@ inquirer
                     var jsBody = JSON.parse(body);
                     // console.log(jsBody);
 
-
-if (jsBody.Ratings === undefined) {
-var noMatchOmdb = (row80 + returns1 + "No Matches - Movie search on: "+ title + returns1 + row80 + returns1 );
-console.log(noMatchOmdb);
-writeLog(noMatchOmdb);
-    return;
-};
-
-
+                    if (jsBody.Ratings === undefined) {
+                        var noMatchOmdb = row80 +
+                            returns1 +
+                            "No Matches - Movie search on: " +
+                            title +
+                            returns1 +
+                            row80 +
+                            returns1;
+                        console.log(noMatchOmdb);
+                        writeLog(noMatchOmdb);
+                        return;
+                    }
 
                     //Checking to see if Rotten Tomatoes rating exists
                     //if it exists, get the rating into a var
@@ -255,7 +296,7 @@ writeLog(noMatchOmdb);
                     var tLength = jsBody.Title.length;
                     var cPadding = (71 - tLength) / 2; //"71" = 80 columns less 9 chars for " Title: "
                     var cPaddingSlice = row40.slice(-cPadding);
-                    var titleString = returns2 +
+                    var titleString = returns1 +
                         cPaddingSlice +
                         " Title: " +
                         jsBody.Title +
@@ -289,13 +330,18 @@ writeLog(noMatchOmdb);
                         "\n" +
                         " Rotten Tomatoes URL: " +
                         jsBody.tomatoURL +
-                        "\n";
+                        "\n" +
+                        row80 + returns1;
+
                 }
 
                 console.log(movieLog, row80, returns2);
-                writeLog(movieLog);
+
+                writeLog(returns1 + row80 + returns1 + "Movie Search: " + title + returns1 + row40 + returns1);
+                writeLogLess(movieLog);
+
             });
-            writeLogLess(returns2);
+            // writeLogLess(row80 + returns1);
         }
 
         ////////////////////////
