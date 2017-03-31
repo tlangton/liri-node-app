@@ -1,269 +1,153 @@
+--------------------------------------------------------------------------------
+Spotify search: 123
+Matches: 20
+First 5 Matches shown.
+--------------------------------------------------------------------------------
+ Logged: Fri Mar 31 2017 16:45:13 GMT-0400 (EDT)
+--------------------------------------------------------------------------------
+Song Title: 123  ---> Artist: Girlpool
+Album: 123
+https://open.spotify.com/artist/3BYXi96LqI8TwNljFKE0DZ
+--------------------------------------------------------------------------------
+Song Title: 123 Victory  ---> Artist: Kirk Franklin
+Album: Losing My Religion
+https://open.spotify.com/artist/4akybxRTGHJZ1DXjLhJ1qu
+--------------------------------------------------------------------------------
+Song Title: Missa solemnis, Op. 123: Gloria: Allegro vivace  ---> Artist: Ludwig van Beethoven
+Album: Beethoven: Missa solemnis, Op. 123
+https://open.spotify.com/artist/2wOqMjp9TyABvtHdOSOTUS
+--------------------------------------------------------------------------------
+Song Title: Missa solemnis, Op. 123: Kyrie: Assai sostenuto (Mit Andacht)  ---> Artist: Ludwig van Beethoven
+Album: Beethoven: Missa solemnis, Op. 123
+https://open.spotify.com/artist/2wOqMjp9TyABvtHdOSOTUS
+--------------------------------------------------------------------------------
+Song Title: Missa solemnis, Op. 123: Sanctus: Adagio (Mit Andacht)  ---> Artist: Ludwig van Beethoven
+Album: Beethoven: Missa solemnis, Op. 123
+https://open.spotify.com/artist/2wOqMjp9TyABvtHdOSOTUS
+--------------------------------------------------------------------------------
 
 
----------- Title: Jagged Edge ---------- 
- Release Year: 1985
- IMDB Rating: 6.4
- Produced in: USA
- Language: English
- Plot: San Francisco heiress Page Forrester is brutally murdered in her remote beach house. Her husband Jack is devastated by the crime but soon finds himself accused of her murder. He hires ...
- Actors: Maria Mayenzet, Peter Coyote, Dave Austin, Richard Partlow
- Rotten Tomatoes Rating: 82%
- Rotten Tomatoes URL: http://www.rottentomatoes.com/m/jagged_edge/
- 03 29 2017, 6:38:47 pm
 
 
----------- Title: The Bridge on the River Kwai ---------- 
- Release Year: 1957
- IMDB Rating: 8.2
- Produced in: UK, USA
- Language: English, Japanese, Thai
- Plot: After settling his differences with a Japanese PoW camp commander, a British colonel co-operates to oversee his men's construction of a railway bridge for their captors - while oblivious to a plan by the Allies to destroy it.
- Actors: William Holden, Alec Guinness, Jack Hawkins, Sessue Hayakawa
- Rotten Tomatoes Rating: 94%
- Rotten Tomatoes URL: http://www.rottentomatoes.com/m/bridge_on_the_river_kwai/
- Wed Mar 29 2017 18:39:22 GMT-0400 (EDT)
-
-
----------- Title: Dogs ---------- 
- Release Year: 2016
- IMDB Rating: 7.6
- Produced in: Romania, France, Bulgaria, Qatar
- Language: Romanian
- Plot: Roman returns to the land he has just inherited from his grandfather. Fully decided to sell this vast but desolate property, he is warned by the local cop that his grandfather was a local ...
- Actors: Dragos Bucur, Gheorghe Visu, Vlad Ivanov, Costel Cascaval
- Rotten Tomatoes Rating: N/A
- Rotten Tomatoes URL: http://www.rottentomatoes.com/m/dogs_2016/
- Logged: Wed Mar 29 2017 18:40:28 GMT-0400 (EDT)
-
-
----------- Title: Spiderman ---------- 
- Release Year: 1990
- IMDB Rating: 5.7
- Produced in: Switzerland
- Language: German
+---------------------------------- Title: 123 ----------------------------------
+ Release Year: 2002
+ IMDB Rating: 6.2
+ Produced in: India
+ Language: Telugu
  Plot: N/A
- Actors: N/A
- Rotten Tomatoes Rating: N/A
- Rotten Tomatoes URL: http://www.rottentomatoes.com/m/spiderman-1990/
- Logged: Wed Mar 29 2017 18:41:36 GMT-0400 (EDT)
-
-
----------- Title: MASH ---------- 
- Release Year: 1970
- IMDB Rating: 7.6
- Produced in: USA
- Language: English, Japanese, Korean
- Plot: The staff of a Korean War field hospital use humor and hijinks to keep their sanity in the face of the horror of war.
- Actors: Donald Sutherland, Elliott Gould, Tom Skerritt, Sally Kellerman
- Rotten Tomatoes Rating: 87%
- Rotten Tomatoes URL: http://www.rottentomatoes.com/m/mash/
- Logged: Thu Mar 30 2017 12:04:42 GMT-0400 (EDT)
-
-
----------- Title: A Good Man ---------- 
- Release Year: 2014
- IMDB Rating: 4.7
- Produced in: USA
- Language: English, Chinese, Romanian, Arabic, Russian
- Plot: After an illustrious special ops career ends in disaster, Alexander (Seagal) goes off the grid and attempts to lead a quiet life as a handyman at an apartment complex in Romania. But when ...
- Actors: Steven Seagal, Victor Webster, Iulia Verdes, Tzi Ma
+ Actors: Prabhudheva, Raju Sundaram, Nagendra Prasad, Jyothika
  Rotten Tomatoes Rating: N/A
  Rotten Tomatoes URL: N/A
- Logged: Thu Mar 30 2017 12:10:18 GMT-0400 (EDT)
-
-
----------- Title: The Sound of Music ---------- 
- Release Year: 1965
- IMDB Rating: 8.0
- Produced in: USA
- Language: English, German
- Plot: A woman leaves an Austrian convent to become a governess to the children of a Naval officer widower.
- Actors: Julie Andrews, Christopher Plummer, Eleanor Parker, Richard Haydn
- Rotten Tomatoes Rating: 86%
- Rotten Tomatoes URL: http://www.rottentomatoes.com/m/sound_of_music/
- Logged: Thu Mar 30 2017 12:11:09 GMT-0400 (EDT)
-
-
----------- Title: Batman ---------- 
- Release Year: 1989
- IMDB Rating: 7.6
- Produced in: USA, UK
- Language: English, French
- Plot: The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker.
- Actors: Michael Keaton, Jack Nicholson, Kim Basinger, Robert Wuhl
- Rotten Tomatoes Rating: 72%
- Rotten Tomatoes URL: http://www.rottentomatoes.com/m/1001781-batman/
- Logged: Thu Mar 30 2017 12:14:22 GMT-0400 (EDT)
--------------------------------------------
-
-
-
----------- Title: Holy Grail ---------- 
- Release Year: 2011
- IMDB Rating: N/A
- Produced in: Japan
- Language: Japanese
- Plot: N/A
- Actors: N/A
- Rotten Tomatoes Rating: N/A
- Rotten Tomatoes URL: N/A
- Logged: Thu Mar 30 2017 12:27:26 GMT-0400 (EDT)
--------------------------------------------
-
-------------------------------Holy Grail------------------------------
-
- Release Year: 2011
- IMDB Rating: N/A
- Produced in: Japan
- Language: Japanese
- Plot: N/A
- Actors: N/A
- Rotten Tomatoes Rating: N/A
- Rotten Tomatoes URL: N/A
- Logged: Thu Mar 30 2017 12:29:14 GMT-0400 (EDT)
--------------------------------------------
-
------------------------------- Title: Holy Grail ------------------------------
-
- Release Year: 2011
- IMDB Rating: N/A
- Produced in: Japan
- Language: Japanese
- Plot: N/A
- Actors: N/A
- Rotten Tomatoes Rating: N/A
- Rotten Tomatoes URL: N/A
- Logged: Thu Mar 30 2017 12:30:22 GMT-0400 (EDT)
--------------------------------------------
-
----------------------------- Title: The Holy Grail ----------------------------
-
- Release Year: 1999
- IMDB Rating: 3.7
- Produced in: USA
- Language: English
- Plot: N/A
- Actors: David Ackroyd, Laurence Gardner, Norris Lacy, Caitlin Matthews
- Rotten Tomatoes Rating: N/A
- Rotten Tomatoes URL: N/A
- Logged: Thu Mar 30 2017 12:30:42 GMT-0400 (EDT)
--------------------------------------------
-
------------------ Title: Monty Python & the Holy Grail in Lego -----------------
-
- Release Year: 2001
- IMDB Rating: 7.9
- Produced in: UK, USA
- Language: English
- Plot: N/A
- Actors: N/A
- Rotten Tomatoes Rating: N/A
- Rotten Tomatoes URL: N/A
- Logged: Thu Mar 30 2017 12:31:05 GMT-0400 (EDT)
--------------------------------------------
-
---------------------------- Title: A Bridge Too Far ---------------------------
- Release Year: 1977
- IMDB Rating: 7.4
- Produced in: USA, UK
- Language: English, German, Dutch, Polish, Latin
- Plot: Operation Market Garden, September 1944: The Allies attempt to capture several strategically important bridges in the Netherlands in the hope of breaking the German lines. However, mismanagement and poor planning result in its failure.
- Actors: Siem Vroom, Marlies van Alcmaer, Erik van 't Wout, Wolfgang Preiss
- Rotten Tomatoes Rating: 73%
- Rotten Tomatoes URL: http://www.rottentomatoes.com/m/bridge_too_far/
- Logged: Thu Mar 30 2017 12:33:44 GMT-0400 (EDT)
--------------------------------------------
-
---------------------------- Title: A Bridge Too Far ---------------------------
- Release Year: 1977
- IMDB Rating: 7.4
- Produced in: USA, UK
- Language: English, German, Dutch, Polish, Latin
- Plot: Operation Market Garden, September 1944: The Allies attempt to capture several strategically important bridges in the Netherlands in the hope of breaking the German lines. However, mismanagement and poor planning result in its failure.
- Actors: Siem Vroom, Marlies van Alcmaer, Erik van 't Wout, Wolfgang Preiss
- Rotten Tomatoes Rating: 73%
- Rotten Tomatoes URL: http://www.rottentomatoes.com/m/bridge_too_far/
- Logged: Thu Mar 30 2017 12:37:04 GMT-0400 (EDT)
--------------------------------------------
-
---------------------------- Title: A Beautiful Mind ---------------------------
- Release Year: 2001
- IMDB Rating: 8.2
- Produced in: USA
- Language: English
- Plot: After John Nash, a brilliant but asocial mathematician, accepts secret work in cryptography, his life takes a turn for the nightmarish.
- Actors: Russell Crowe, Ed Harris, Jennifer Connelly, Christopher Plummer
- Rotten Tomatoes Rating: 75%
- Rotten Tomatoes URL: http://www.rottentomatoes.com/m/beautiful_mind/
- Logged: Thu Mar 30 2017 12:38:48 GMT-0400 (EDT)
+ Logged: Fri Mar 31 2017 16:45:22 GMT-0400 (EDT)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+No search params! - Default Track -> Spotify search: The Sign Ace of Base
+Matches: 20
+First 5 Matches shown.
+--------------------------------------------------------------------------------
+ Logged: Fri Mar 31 2017 16:53:51 GMT-0400 (EDT)
+--------------------------------------------------------------------------------
+Song Title: The Sign  ---> Artist: Ace of Base
+Album: The Sign (US Album) [Remastered]
+https://open.spotify.com/artist/5ksRONqssB7BR161NTtJAm
+--------------------------------------------------------------------------------
+Song Title: The Sign  ---> Artist: Ace of Base
+Album: Greatest Hits
+https://open.spotify.com/artist/5ksRONqssB7BR161NTtJAm
+--------------------------------------------------------------------------------
+Song Title: Don't Turn Around  ---> Artist: Ace of Base
+Album: The Sign (US Album) [Remastered]
+https://open.spotify.com/artist/5ksRONqssB7BR161NTtJAm
+--------------------------------------------------------------------------------
+Song Title: All That She Wants  ---> Artist: Ace of Base
+Album: The Sign (US Album) [Remastered]
+https://open.spotify.com/artist/5ksRONqssB7BR161NTtJAm
+--------------------------------------------------------------------------------
+Song Title: Living in Danger  ---> Artist: Ace of Base
+Album: The Sign (US Album) [Remastered]
+https://open.spotify.com/artist/5ksRONqssB7BR161NTtJAm
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Spotify search: nick danger
+Matches: 20
+First 5 Matches shown.
 --------------------------------------------------------------------------------
 
-
---------------------------------- Title: MASH ---------------------------------
- Release Year: 1970
- IMDB Rating: 7.6
- Produced in: USA
- Language: English, Japanese, Korean
- Plot: The staff of a Korean War field hospital use humor and hijinks to keep their sanity in the face of the horror of war.
- Actors: Donald Sutherland, Elliott Gould, Tom Skerritt, Sally Kellerman
- Rotten Tomatoes Rating: 87%
- Rotten Tomatoes URL: http://www.rottentomatoes.com/m/mash/
- Logged: Thu Mar 30 2017 12:40:29 GMT-0400 (EDT)
+ Logged: Fri Mar 31 2017 16:55:36 GMT-0400 (EDT)
+--------------------------------------------------------------------------------
+Song Title: The Further Adventures Of Nick Danger  ---> Artist: The Firesign Theatre
+Album: How Can You Be In Two Places At Once When You're Not Anywhere At All
+https://open.spotify.com/artist/1Z4J5sccklnnhIYLXoW2rF
+--------------------------------------------------------------------------------
+Song Title: I Don't Believe in Your God (feat. Eddie Wellz, Nick Stecki & Zeus Ozuna)  ---> Artist: Danger Silent
+Album: Identity
+https://open.spotify.com/artist/73fjWW6xsd0AzqydzyLB6Z
+--------------------------------------------------------------------------------
+Song Title: Savior (feat. Nick Danger)  ---> Artist: Jimmi Bones
+Album: Lost Souls in the City of Men
+https://open.spotify.com/artist/4YkEqp1R2SHFjt1lBLgkbr
+--------------------------------------------------------------------------------
+Song Title: Picture Me Painted (feat. Nick Danger)  ---> Artist: Jimmi Bones
+Album: Lost Souls in the City of Men
+https://open.spotify.com/artist/4YkEqp1R2SHFjt1lBLgkbr
+--------------------------------------------------------------------------------
+Song Title: Nick Danger  ---> Artist: Various Artists
+Album: Groove Merchant Turns 20
+https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of
 --------------------------------------------------------------------------------
 
-
---------------------------------- Title: MASH ---------------------------------
- Release Year: 1970
- IMDB Rating: 7.6
- Produced in: USA
- Language: English, Japanese, Korean
- Plot: The staff of a Korean War field hospital use humor and hijinks to keep their sanity in the face of the horror of war.
- Actors: Donald Sutherland, Elliott Gould, Tom Skerritt, Sally Kellerman
- Rotten Tomatoes Rating: 87%
- Rotten Tomatoes URL: http://www.rottentomatoes.com/m/mash/
- Logged: Thu Mar 30 2017 12:47:51 GMT-0400 (EDT)
+--------------------------------------------------------------------------------
+Spotify search: nick danger
+Matches: 20
+First 5 Matches shown.
+--------------------------------------------------------------------------------
+ Logged: Fri Mar 31 2017 16:56:42 GMT-0400 (EDT)
+--------------------------------------------------------------------------------
+Song Title: The Further Adventures Of Nick Danger  ---> Artist: The Firesign Theatre
+Album: How Can You Be In Two Places At Once When You're Not Anywhere At All
+https://open.spotify.com/artist/1Z4J5sccklnnhIYLXoW2rF
+--------------------------------------------------------------------------------
+Song Title: I Don't Believe in Your God (feat. Eddie Wellz, Nick Stecki & Zeus Ozuna)  ---> Artist: Danger Silent
+Album: Identity
+https://open.spotify.com/artist/73fjWW6xsd0AzqydzyLB6Z
+--------------------------------------------------------------------------------
+Song Title: Picture Me Painted (feat. Nick Danger)  ---> Artist: Jimmi Bones
+Album: Lost Souls in the City of Men
+https://open.spotify.com/artist/4YkEqp1R2SHFjt1lBLgkbr
+--------------------------------------------------------------------------------
+Song Title: Savior (feat. Nick Danger)  ---> Artist: Jimmi Bones
+Album: Lost Souls in the City of Men
+https://open.spotify.com/artist/4YkEqp1R2SHFjt1lBLgkbr
+--------------------------------------------------------------------------------
+Song Title: Nick Danger  ---> Artist: Various Artists
+Album: Groove Merchant Turns 20
+https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of
 --------------------------------------------------------------------------------
 
-
------------------------------- Title: Mr. Nobody ------------------------------
- Release Year: 2009
- IMDB Rating: 7.9
- Produced in: Belgium, Germany, Canada, France
- Language: English, Mohawk
- Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
- Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
- Rotten Tomatoes Rating: 64%
- Rotten Tomatoes URL: http://www.rottentomatoes.com/m/mr-nobody/
- Logged: Thu Mar 30 2017 12:47:55 GMT-0400 (EDT)
 --------------------------------------------------------------------------------
-spot  Logged: Thu Mar 30 2017 12:57:28 GMT-0400 (EDT)
+Spotify search: carlos danger
+Matches: 20
+First 5 Matches shown.
 --------------------------------------------------------------------------------
-
-
---------------------------------- Title: MASH ---------------------------------
- Release Year: 1970
- IMDB Rating: 7.6
- Produced in: USA
- Language: English, Japanese, Korean
- Plot: The staff of a Korean War field hospital use humor and hijinks to keep their sanity in the face of the horror of war.
- Actors: Donald Sutherland, Elliott Gould, Tom Skerritt, Sally Kellerman
- Rotten Tomatoes Rating: 87%
- Rotten Tomatoes URL: http://www.rottentomatoes.com/m/mash/
- Logged: Thu Mar 30 2017 12:57:36 GMT-0400 (EDT)
+ Logged: Fri Mar 31 2017 16:57:15 GMT-0400 (EDT)
 --------------------------------------------------------------------------------
-random Logged: Thu Mar 30 2017 15:07:37 GMT-0400 (EDT)
+Song Title: Carlos Danger  ---> Artist: Barbarians
+Album: Carlos Danger
+https://open.spotify.com/artist/4wxlSKPuhyJO1ZWr52DjOl
 --------------------------------------------------------------------------------
-spot bbb Logged: Thu Mar 30 2017 15:30:56 GMT-0400 (EDT)
+Song Title: Carlos Danger  ---> Artist: The Flying Scotsman
+Album: Carlos Danger
+https://open.spotify.com/artist/1Q4CxSY4PmhIzdT6SvIiUE
 --------------------------------------------------------------------------------
-spot yesterday Logged: Thu Mar 30 2017 15:53:32 GMT-0400 (EDT)
+Song Title: Funeral Drunk  ---> Artist: Carlos Danger
+Album: The Return of Carlos Danger
+https://open.spotify.com/artist/4cMJp3bxi2mxNsYQnQ1CMR
 --------------------------------------------------------------------------------
-spot starting over Logged: Thu Mar 30 2017 15:54:31 GMT-0400 (EDT)
+Song Title: Flowtree  ---> Artist: Carlos Danger
+Album: The Return of Carlos Danger
+https://open.spotify.com/artist/4cMJp3bxi2mxNsYQnQ1CMR
 --------------------------------------------------------------------------------
-spot every little thing Logged: Thu Mar 30 2017 15:55:28 GMT-0400 (EDT)
---------------------------------------------------------------------------------
-spot the sign Logged: Thu Mar 30 2017 15:56:49 GMT-0400 (EDT)
---------------------------------------------------------------------------------
-spot the sign + ace of base Logged: Thu Mar 30 2017 15:58:18 GMT-0400 (EDT)
---------------------------------------------------------------------------------
-spot the sign Logged: Thu Mar 30 2017 15:59:00 GMT-0400 (EDT)
+Song Title: Mountain Tower  ---> Artist: Carlos Danger
+Album: The Return of Carlos Danger
+https://open.spotify.com/artist/4cMJp3bxi2mxNsYQnQ1CMR
 --------------------------------------------------------------------------------
