@@ -1,3 +1,5 @@
+
+//Week 10 - Liri-node-app
 ///////////////////////
 // Dependencies
 ///////////////////////
@@ -63,8 +65,9 @@ var questions = [
 // Create a "Prompt" with a series of questions from var above.
 inquirer
     .prompt(
+         questions
         // Here we give the user a list to choose from.
-        questions // the variable
+        // the variable
         // Once we are done with all the questions... "then" we do stuff with the answers
         // In this case, we store all of the answers into a "user" object that inquirer makes for us.
     )
@@ -126,11 +129,17 @@ inquirer
             // console.log("twit");
             // writeLog("twit");
 
-            var twitLogHeader =  returns1 + row80 + returns1 + "Recent Tweets: " + returns1 + row40 + returns1 ;
+            var twitLogHeader = returns1 +
+                row80 +
+                returns1 +
+                "Recent Tweets: " +
+                returns1 +
+                row40 +
+                returns1;
             writeLog(twitLogHeader);
             writeLogLess(returns1);
 
-            var params = { screen_name: "Pulpinfo56" };
+            var params = { screen_name: "InifinitleyLoop" };
             client.get(
                 "statuses/user_timeline",
                 params,
@@ -145,9 +154,9 @@ inquirer
                         }
 
                         for (i = 0; i < maxTweetcount; i++) {
-                            var twitterLog =
-                                (i + 1) +
-                                " )  --->>  " +
+                            var twitterLog = i +
+                                1 +
+                                ") --->>>  " +
                                 tweets[i].created_at +
                                 returns1 +
                                 tweets[i].text +
@@ -156,7 +165,7 @@ inquirer
                             writeLogLess(twitterLog);
                         }
                     }
-                writeLogLess(row80 + returns2);
+                    writeLogLess(row80 + returns2);
                 }
             );
         }
@@ -248,7 +257,7 @@ inquirer
         }
 
         ////////////////////////
-        //// omdb
+        //// omdb  a/k/a "movie-this"
         ////////////////////////
         function movie(title) {
             //if no title entered, Nobody's the default.
@@ -331,24 +340,61 @@ inquirer
                         " Rotten Tomatoes URL: " +
                         jsBody.tomatoURL +
                         "\n" +
-                        row80 + returns1;
-
+                        row80 +
+                        returns1;
                 }
 
                 console.log(movieLog, row80, returns2);
 
-                writeLog(returns1 + row80 + returns1 + "Movie Search: " + title + returns1 + row40 + returns1);
+                writeLog(
+                    returns1 +
+                        row80 +
+                        returns1 +
+                        "Movie Search: " +
+                        title +
+                        returns1 +
+                        row40 +
+                        returns1
+                );
                 writeLogLess(movieLog);
-
             });
             // writeLogLess(row80 + returns1);
         }
 
         ////////////////////////
-        //// self directed
+        //// self directed a/k/a "do-what-it-says"
         ////////////////////////
         function selfDetermined() {
-            console.log("random ");
-            writeLog("random");
+            // console.log("random ");
+            writeLogLess("\n" + row80 + "\n do-what-it-says - Randomly Picked from list...");
+
+            //read the random txt file
+            fs.readFile("random.txt", "utf8", function(error, data) {
+                //split the lines on char returns
+                var dataArr = data.split("\n");
+                //counts the lines
+                var dataArrLength = dataArr.length;
+                //picks a random number based on the number of lines
+                var randItem = Math.floor(Math.random() * dataArrLength );
+                //split the randomly chosen line into function and data
+                var randItemArray = dataArr[randItem].split(",");
+                //separate
+                var randFunction = randItemArray[0];
+                var randData = randItemArray[1];
+
+                //switch to choose function and pass paramter.
+                switch (randFunction) {
+                    case "my-tweets":
+                        tweets();
+                        break;
+                    case "movie-this":
+                        movie(randData);
+                        break;
+                    case "spotify-this-song":
+                        spotifyTrack(randData);
+                        break;
+                }
+
+            });
         }
     });
